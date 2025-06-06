@@ -1,70 +1,99 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# ExpenseTracker-DApp
 
-## Available Scripts
+A decentralized application (DApp) built on the Ethereum blockchain, allowing users to track and manage their expenses. The application utilizes smart contracts written in Solidity to store transaction data securely. It uses **Sepolia testnet** for deployment and interaction. 
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Track Decentralized Transactions**: The application allows users to track their expenses on the blockchain, providing transparency and security.
+- **Edit Name Feature**: Registered users can update their displayed name in the application, enhancing user personalization.
+- **Total Registered Users Counter**: Displays the current number of users who have registered on the platform.
+- **Smart Contract Integration**: All expense data and user interactions are handled via a secure Solidity smart contract deployed on the **Sepolia testnet**.
+- **Special Cursor Design**: A unique cursor design adds a touch of interactivity to the user experience.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend**: React.js
+- **Blockchain**: Ethereum (Sepolia testnet)
+- **Smart Contracts**: Solidity
+- **Wallet Integration**: MetaMask
+- **Development Tools**: Truffle, Ganache, Web3.js
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- **Node.js**: Make sure you have [Node.js](https://nodejs.org/) installed.
+- **MetaMask**: Install [MetaMask](https://metamask.io/) for interacting with the Ethereum network.
+- **Sepolia Testnet**: Ensure your MetaMask is connected to the Sepolia testnet.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Steps to Run Locally
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+   ```bash
+   git clone https://github.com/Ved3205/ExpenseTracker-DApp.git
+````
 
-### `npm run eject`
+2. Navigate into the project directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```bash
+   cd ExpenseTracker-DApp
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Install the necessary dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Start the development server:
 
-## Learn More
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Open your browser and visit `http://localhost:3000` to see the application running.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Smart Contract Setup
 
-### Code Splitting
+1. **Set up the Sepolia Testnet**: Use the Sepolia testnet.
+2. **Deploy the Smart Contract**: Use **Remix IDE** or other tools for deploying the contract.
+3. **Update the Contract Address**: Update the frontend code to use your deployed contract's address.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+1. Connect your **MetaMask** wallet to the application, ensuring it is set to the **Sepolia testnet**.
+2. **Add an Expense**: Input your expense details (e.g., amount, category).
+3. **Edit Your Name**: Registered users can change their displayed name using the "Edit Name" feature.
+4. **View Registered Users Count**: The app dynamically displays how many users have registered on the platform.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Special Functionalities
 
-### Making a Progressive Web App
+### 1. Edit Name Feature
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+* **Purpose**: Allows registered users to update their displayed name in the application.
+* **How It Works**: The user can input a new name, which gets updated in the smart contract and reflected in the UI.
 
-### Advanced Configuration
+### 2. Total Registered Users Counter
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+* **Purpose**: Displays the current number of registered users on the platform.
+* **How It Works**: The smart contract keeps track of all registered users, and the number is updated in real-time on the frontend.
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## Acknowledgements
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* **React.js**: Frontend framework for building the user interface.
+* **Solidity**: Used to write the smart contracts for expense tracking and user registration.
+* **Ethereum**: Blockchain platform for deploying the smart contracts and managing transactions.
+* **MetaMask**: Crypto wallet for interacting with the Ethereum network and signing transactions.
+* **Ganache**: Local Ethereum blockchain for testing smart contracts.
+* **Truffle**: Framework for smart contract development and deployment.
+
+## Connect With Me
+
+* **GitHub**: [https://github.com/Ved3205](https://github.com/Ved3205)
+* **LinkedIn**: [https://linkedin.com/in/vedhiralkar](https://linkedin.com/in/vedhiralkar)
+
+
